@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Personal Website</title>
+</head>
+
+<body>
+    <h1>Contact Me</h1>
+    <nav>
+        <a href="home.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="project.html">Project</a> |
+        <a href="contact.html">Contact</a> |
+    </nav>
+    <h2>Informasi Kontak</h2>
+    <p>Jika anda ingin berdiskusi atau bekerja sama, silakan hubungi saya melalui form berikut.<br>
+        Anda juga bisa mengirim email ke:
+        <a href="mailto:dimassaptahadi23@gmail.com" target="_blank">dimassaptahadi23@gmail.com
+        </a>
+    </p>
+
+    <!--izin bapak menggunakan br, karna agar terlihat rapih sepert tugas yang bapa arahkan.
+kegunaan br tersebut agar teks yang "anda juga bisa mengirim email ke:" itu pindah baris tetapi masih dalam satu paragraf dengan teks yang diatas.-->
+
+    <h2>Form Pesan</h2>
+    <table border="1" cellpadding="5" cellspacing="0" widht="80">
+        <thead>
+            <tr style="background-color: deeppink;">
+                <th colspan="2">Form Data Kontak</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>Nama Lengkap:</th>
+                <td>
+                    <input type="text" name="nama">
+                </td>
+            </tr>
+
+            <tr>
+                <th>Email:</th>
+                <td>
+                    <input type="email" name="email">
+                </td>
+            </tr>
+
+            <tr>
+                <th>Nomor Telepon:</th>
+                <td>
+                    <input type="text" name="telepon">
+                </td>
+            </tr>
+
+            <tr>
+                <th>Jenis Kelamin:</th>
+                <td>
+                    <input type="radio" name="jenis_kelamin" value="laki-laki">
+                    Laki-laki
+                    <input type="radio" name="jenis_kelamin" value="perempuan">
+                    Perempuan
+                </td>
+            </tr>
+
+            <tr>
+                <th>Tanggal Lahir:</th>
+                <td>
+                    <input type="date" name="tanggal_lahir">
+                </td>
+            </tr>
+
+            <tr>
+                <th>Topik Pesan:</th>
+                <td>
+                    <select name="topik">
+                        <option value="diskusi">Diskusi</option>
+                        <option value="kerja sama">Bekerja sama</option>
+                        <option value="Pertanyaan">Pertanyaan</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Jenis Pesan:</th>
+                <td>
+                    <input type="radio" name="jenis_pesan" value="pertanyaan">
+                    Pertanyaan
+                    <input type="radio" name="jenis_pesan" value="saran">
+                    Saran
+                    <input type="radio" name="jenis_pesan" value="lainnya">
+                    Lainnya
+                </td>
+            </tr>
+
+            <tr>
+                <th>Pesan:</th>
+                <td>
+                    <textarea name="pesan" rows="7" cols="40"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Salinan Pesan:</th>
+                <td>
+                    <input type="checkbox" name="salinan">
+                    Kirim salinan pesan ke email saya
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Kirim Pesan">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <i>Catatan: karena website ini hanya sebatas menggunakan HTML, form belum terhubung ke server/database.</i>
+
+    <hr>
+    <nav>
+        <a href="home.html">Kembali ke Home
+        </a>
+        <p>&copy;2026 Dimas Saptahadi.</p>
+</body>
+
+</html>
